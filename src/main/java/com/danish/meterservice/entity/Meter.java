@@ -11,6 +11,8 @@ import org.hibernate.annotations.UpdateTimestamp;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name="meter")
@@ -19,11 +21,11 @@ public class Meter {
 
     @Id
     @Column(name="meterNumber",nullable = false,unique = true)
-    private long meterNumber;
+    private Long meterNumber;
 
 
     @Column(name="msisdn",nullable = false)
-    private long msisdn;
+    private Long msisdn;
 
     @Column(name="customerName",nullable = false)
     private String customerName;
@@ -46,6 +48,9 @@ public class Meter {
     @Enumerated(EnumType.STRING)
     @Column(name="meterStatus",nullable = false)
     private MeterStatus meterStatus;
+
+    @OneToMany(mappedBy = "meter",cascade = CascadeType.ALL)
+    private List<MeterReading> readings = new ArrayList<>();
 
 
 }
