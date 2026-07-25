@@ -31,7 +31,7 @@ public class MeterReadingService {
         for (Meter meter : activeMeters) {
             Optional<MeterReading> latestReading = meterReadingRepository.
                     findTopByMeterMeterNumberOrderByReadingIdDesc(meter.getMeterNumber());
-            long previousReading;
+           long previousReading;
             if(latestReading.isPresent()){
                 previousReading=latestReading.get().getReadingValue();
             }else{

@@ -30,7 +30,9 @@ public class MeterManagement {
         newMeter.setAddress(meterRequest.getAddress());
         newMeter.setMeterType(meterRequest.getMeterType());
         newMeter.setMeterStatus(meterRequest.getMeterStatus());
-        return meterRepository.save(newMeter);
+        meterRepository.save(newMeter);
+        log.info("New meter added successfully :{}",newMeter);
+        return newMeter;
     }
 
 
@@ -40,6 +42,7 @@ public class MeterManagement {
             throw new MeterNotFoundException("Meter Number does not exists: "+meterNumber);
         }
         meterRepository.deleteById(meterNumber);
+        log.info("Meter deleted successfully :{}",meterNumber);
     }
 
     public Meter getMeter(long meterNumber){
@@ -47,7 +50,9 @@ public class MeterManagement {
             log.warn("Meter Number does not exists :{}",meterNumber);
             throw new MeterNotFoundException("Meter Number does not exists: "+meterNumber);
         }
-        return meterRepository.findById(meterNumber).get();
+        Meter foundMeter = meterRepository.findById(meterNumber).get();
+        log.info("Meter found :{}",meterNumber);
+        return foundMeter;
     }
 
     public Meter changeMeterStatus(long meterNumber, MeterStatus newStatus){
@@ -57,6 +62,8 @@ public class MeterManagement {
         }
         Meter updatedMeter = meterRepository.findById(meterNumber).get();
         updatedMeter.setMeterStatus(newStatus);
-        return meterRepository.save(updatedMeter);
+        meterRepository.save(updatedMeter);
+        log.info("Meter {} status updated successfully to :{}",meterNumber,newStatus);
+        return updatedMeter;
     }
 }
