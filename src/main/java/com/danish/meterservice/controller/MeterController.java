@@ -55,7 +55,7 @@ public class MeterController {
     }
 
     @PostMapping("/update/{meterNumber}/{newStatus}")
-    public ResponseEntity<MeterResponse> updateMeterStatus(@PathVariable long meterNumber, @PathVariable MeterStatus newStatus){
+    public ResponseEntity<MeterResponse> updateMeterStatus(@PathVariable Long meterNumber, @PathVariable MeterStatus newStatus){
         Meter updatedMeter = meterManagement.changeMeterStatus(meterNumber,newStatus);
         MeterResponse response = new MeterResponse();
         response.setMeterNumber(updatedMeter.getMeterNumber());
@@ -66,6 +66,11 @@ public class MeterController {
         response.setMeterStatus(updatedMeter.getMeterStatus());
         return ResponseEntity.status(HttpStatus.CREATED)
                 .body(response);
+    }
+
+    @GetMapping("/getStatus/{meterNumber}")
+    public ResponseEntity<MeterStatus> getMeterStatus(@PathVariable Long meterNumber){
+        return ResponseEntity.status(HttpStatus.FOUND).body(meterManagement.getMeterStatus(meterNumber));
     }
 
 }

@@ -66,4 +66,13 @@ public class MeterManagement {
         log.info("Meter {} status updated successfully to :{}",meterNumber,newStatus);
         return updatedMeter;
     }
+
+    public MeterStatus getMeterStatus(Long meterNumber){
+        if(!meterRepository.existsById(meterNumber)){
+            log.warn("Meter Number does not exists :{}",meterNumber);
+            throw new MeterNotFoundException("Meter Number does not exists: "+meterNumber);
+        }
+        Meter foundMeter = meterRepository.findById(meterNumber).get();
+        return foundMeter.getMeterStatus();
+    }
 }
