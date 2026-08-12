@@ -2,6 +2,7 @@ package com.danish.meterservice.service;
 
 import com.danish.meterservice.dto.MeterRequest;
 import com.danish.meterservice.Repository.MeterRepository;
+import com.danish.meterservice.dto.MeterResponse;
 import com.danish.meterservice.entity.Meter;
 import com.danish.meterservice.enums.MeterStatus;
 import com.danish.meterservice.exception.MeterAlreadyExistsException;
@@ -10,6 +11,8 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Optional;
 
 @Slf4j
@@ -74,5 +77,22 @@ public class MeterManagement {
         }
         Meter foundMeter = meterRepository.findById(meterNumber).get();
         return foundMeter.getMeterStatus();
+    }
+
+
+    public List<MeterResponse> getActiveMeters(){
+        List<Meter> activeMeters = meterRepository.findByMeterStatus(MeterStatus.ACTIVE);
+        List<MeterResponse> responses = new ArrayList<>();
+        MeterResponse singleResponse =  new MeterResponse();
+        for(Meter singleMeter : activeMeters){
+            singleResponse.setMeterNumber(singleMeter.getMeterNumber());
+            singleResponse.setMsisdn(singleMeter.getMsisdn());
+            singleResponse.setCustomerName(singleMeter.getCustomerName());
+            singleResponse.setAddress(singleMeter.getAddress());
+            singleResponse.setMeterType(singleMeter.getMeterType());
+            singleResponse.setMeterStatus(singleMeter.getMeterStatus());
+            responses.add(singleResponse);
+        }
+        return responses;
     }
 }

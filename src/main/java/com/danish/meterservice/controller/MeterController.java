@@ -2,15 +2,19 @@ package com.danish.meterservice.controller;
 
 import com.danish.meterservice.dto.MeterRequest;
 import com.danish.meterservice.dto.MeterResponse;
+import com.danish.meterservice.dto.ReadingResponse;
 import com.danish.meterservice.entity.Meter;
+import com.danish.meterservice.entity.MeterReading;
 import com.danish.meterservice.enums.MeterStatus;
 import com.danish.meterservice.service.MeterManagement;
+import com.danish.meterservice.service.MeterReadingService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
 import java.util.Optional;
 
 @RestController
@@ -19,6 +23,7 @@ import java.util.Optional;
 public class MeterController {
 
     private final MeterManagement meterManagement;
+    private final MeterReadingService meterReadingService;
 
     @PostMapping("/add")
     public ResponseEntity<MeterResponse> addMeter(@Valid @RequestBody MeterRequest meterRequest){
@@ -71,6 +76,17 @@ public class MeterController {
     @GetMapping("/getStatus/{meterNumber}")
     public ResponseEntity<MeterStatus> getMeterStatus(@PathVariable Long meterNumber){
         return ResponseEntity.status(HttpStatus.FOUND).body(meterManagement.getMeterStatus(meterNumber));
+    }
+
+    @GetMapping("/getReadings/{meterNumber}")
+    public ResponseEntity<List<ReadingResponse>> getReadings(@PathVariable Long meterNumber){
+        return ResponseEntity.status(HttpStatus.FOUND).body(meterReadingService.getTwoReadings(meterNumber));
+    }
+
+
+    @GetMapping("/getActiveMeters")
+    public ResponseEntity<List<MeterResponse>> getActiveMeters(){
+        return ResponseEntity.status(HttpStatus.FOUND).body(meterManagement.getActiveMeters());
     }
 
 }

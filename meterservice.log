@@ -1,18 +1,27 @@
-2026-08-09T00:12:34.635+05:30  INFO 13372 --- [meterservice] [main] c.d.m.MeterserviceApplication            : Starting MeterserviceApplication using Java 25.0.1 with PID 13372 (C:\Users\Danish\Downloads\meterservice\target\classes started by Danish in C:\Users\Danish\Downloads\meterservice)
-2026-08-09T00:12:34.674+05:30  INFO 13372 --- [meterservice] [main] c.d.m.MeterserviceApplication            : No active profile set, falling back to 1 default profile: "default"
-2026-08-09T00:12:37.595+05:30  INFO 13372 --- [meterservice] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-08-09T00:12:37.760+05:30  INFO 13372 --- [meterservice] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 134 ms. Found 2 JPA repository interfaces.
-2026-08-09T00:12:38.875+05:30  INFO 13372 --- [meterservice] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
-2026-08-09T00:12:38.911+05:30  INFO 13372 --- [meterservice] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-08-09T00:12:38.912+05:30  INFO 13372 --- [meterservice] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
-2026-08-09T00:12:39.057+05:30  INFO 13372 --- [meterservice] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 4139 ms
-2026-08-09T00:12:39.482+05:30  INFO 13372 --- [meterservice] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
-2026-08-09T00:12:39.642+05:30  INFO 13372 --- [meterservice] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.19.Final
-2026-08-09T00:12:40.851+05:30  INFO 13372 --- [meterservice] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-08-09T00:12:40.933+05:30  INFO 13372 --- [meterservice] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-08-09T00:12:41.318+05:30  INFO 13372 --- [meterservice] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@52285a5f
-2026-08-09T00:12:41.323+05:30  INFO 13372 --- [meterservice] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-08-09T00:12:41.513+05:30  INFO 13372 --- [meterservice] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2026-08-12T00:01:38.735+05:30  INFO 11028 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler started
+2026-08-12T00:01:38.765+05:30  INFO 11028 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler completed
+2026-08-12T00:03:38.734+05:30  INFO 11028 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler started
+2026-08-12T00:03:38.749+05:30  INFO 11028 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler completed
+2026-08-12T00:03:57.781+05:30  INFO 11028 --- [meterservice] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-08-12T00:03:57.791+05:30  INFO 11028 --- [meterservice] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-08-12T00:03:57.799+05:30  INFO 11028 --- [meterservice] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-08-12T00:03:57.803+05:30  INFO 11028 --- [meterservice] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-08-12T00:03:57.816+05:30  INFO 11028 --- [meterservice] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-08-12T00:04:10.394+05:30  INFO 9596 --- [meterservice] [main] c.d.m.MeterserviceApplication            : Starting MeterserviceApplication using Java 25.0.1 with PID 9596 (C:\Users\Danish\Downloads\meterservice\target\classes started by Danish in C:\Users\Danish\Downloads\meterservice)
+2026-08-12T00:04:10.403+05:30  INFO 9596 --- [meterservice] [main] c.d.m.MeterserviceApplication            : No active profile set, falling back to 1 default profile: "default"
+2026-08-12T00:04:12.409+05:30  INFO 9596 --- [meterservice] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-08-12T00:04:12.540+05:30  INFO 9596 --- [meterservice] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 111 ms. Found 2 JPA repository interfaces.
+2026-08-12T00:04:13.538+05:30  INFO 9596 --- [meterservice] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-08-12T00:04:13.567+05:30  INFO 9596 --- [meterservice] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-08-12T00:04:13.568+05:30  INFO 9596 --- [meterservice] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-08-12T00:04:13.689+05:30  INFO 9596 --- [meterservice] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 3116 ms
+2026-08-12T00:04:14.092+05:30  INFO 9596 --- [meterservice] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-08-12T00:04:14.197+05:30  INFO 9596 --- [meterservice] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.19.Final
+2026-08-12T00:04:15.217+05:30  INFO 9596 --- [meterservice] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-08-12T00:04:15.281+05:30  INFO 9596 --- [meterservice] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-08-12T00:04:15.607+05:30  INFO 9596 --- [meterservice] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6ec3d8e4
+2026-08-12T00:04:15.610+05:30  INFO 9596 --- [meterservice] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-08-12T00:04:15.757+05:30  INFO 9596 --- [meterservice] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [jdbc:postgresql://localhost:5432/meterservice]
 	Database driver: PostgreSQL JDBC Driver
 	Database dialect: PostgreSQLDialect
@@ -24,152 +33,148 @@
 	Pool: DataSourceConnectionProvider
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2026-08-09T00:12:44.473+05:30  INFO 13372 --- [meterservice] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-08-09T00:12:44.711+05:30  INFO 13372 --- [meterservice] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-08-09T00:12:45.027+05:30  INFO 13372 --- [meterservice] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
-2026-08-09T00:12:45.792+05:30  WARN 13372 --- [meterservice] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-08-09T00:12:46.705+05:30  INFO 13372 --- [meterservice] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
-2026-08-09T00:12:46.721+05:30  INFO 13372 --- [meterservice] [main] c.d.m.MeterserviceApplication            : Started MeterserviceApplication in 13.676 seconds (process running for 15.185)
-2026-08-09T00:12:46.733+05:30  INFO 13372 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler started
-2026-08-09T00:12:47.985+05:30  INFO 13372 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler completed
-2026-08-09T00:13:26.078+05:30  INFO 13372 --- [meterservice] [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-08-09T00:13:26.079+05:30  INFO 13372 --- [meterservice] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2026-08-09T00:13:26.082+05:30  INFO 13372 --- [meterservice] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
-2026-08-09T00:13:26.220+05:30  WARN 13372 --- [meterservice] [http-nio-8080-exec-3] c.d.m.service.MeterManagement            : Meter Number does not exists :46114
-2026-08-09T00:13:43.427+05:30  INFO 13372 --- [meterservice] [http-nio-8080-exec-2] c.d.m.service.MeterManagement            : Meter found :46115
-2026-08-09T00:14:32.866+05:30  INFO 13372 --- [meterservice] [http-nio-8080-exec-4] c.d.m.service.MeterManagement            : Meter 46117 status updated successfully to :INACTIVE
-2026-08-09T00:14:38.001+05:30  INFO 13372 --- [meterservice] [http-nio-8080-exec-5] c.d.m.service.MeterManagement            : Meter 46117 status updated successfully to :INACTIVE
-2026-08-09T00:14:45.579+05:30  INFO 13372 --- [meterservice] [http-nio-8080-exec-6] c.d.m.service.MeterManagement            : Meter 46116 status updated successfully to :INACTIVE
-2026-08-09T00:14:46.717+05:30  INFO 13372 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler started
-2026-08-09T00:14:46.740+05:30  INFO 13372 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler completed
-2026-08-09T00:16:46.716+05:30  INFO 13372 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler started
-2026-08-09T00:16:46.742+05:30  INFO 13372 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler completed
-2026-08-09T00:18:12.930+05:30  WARN 13372 --- [meterservice] [http-nio-8080-exec-9] c.d.m.service.MeterManagement            : Meter Number already exists :46119
-2026-08-09T00:18:20.528+05:30  WARN 13372 --- [meterservice] [http-nio-8080-exec-10] org.hibernate.orm.jdbc.error             : HHH000247: ErrorCode: 0, SQLState: 23502
-2026-08-09T00:18:20.529+05:30  WARN 13372 --- [meterservice] [http-nio-8080-exec-10] org.hibernate.orm.jdbc.error             : ERROR: null value in column "created_on" of relation "meter" violates not-null constraint
-  Detail: Failing row contains (46111, Kolkata, null, Arman, INACTIVE, FREE, 8271876061, null).
-2026-08-09T00:18:20.558+05:30 ERROR 13372 --- [meterservice] [http-nio-8080-exec-10] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.DataIntegrityViolationException: could not execute statement [ERROR: null value in column "created_on" of relation "meter" violates not-null constraint
-  Detail: Failing row contains (46111, Kolkata, null, Arman, INACTIVE, FREE, 8271876061, null).] [insert into meter (address,customer_name,meter_status,meter_type,msisdn,meter_number) values (?,?,?,?,?,?)]; SQL [insert into meter (address,customer_name,meter_status,meter_type,msisdn,meter_number) values (?,?,?,?,?,?)]; constraint [created_on]] with root cause
-
-org.postgresql.util.PSQLException: ERROR: null value in column "created_on" of relation "meter" violates not-null constraint
-  Detail: Failing row contains (46111, Kolkata, null, Arman, INACTIVE, FREE, 8271876061, null).
-	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2904) ~[postgresql-42.7.11.jar:42.7.11]
-	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2589) ~[postgresql-42.7.11.jar:42.7.11]
-	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:431) ~[postgresql-42.7.11.jar:42.7.11]
-	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:534) ~[postgresql-42.7.11.jar:42.7.11]
-	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:437) ~[postgresql-42.7.11.jar:42.7.11]
-	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:196) ~[postgresql-42.7.11.jar:42.7.11]
-	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:157) ~[postgresql-42.7.11.jar:42.7.11]
-	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61) ~[HikariCP-7.0.2.jar:na]
-	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java) ~[HikariCP-7.0.2.jar:na]
-	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:181) ~[hibernate-core-7.2.19.Final.jar:7.2.19.Final]
-	at org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.performNonBatchedMutation(AbstractMutationExecutor.java:145) ~[hibernate-core-7.2.19.Final.jar:7.2.19.Final]
-	at org.hibernate.engine.jdbc.mutation.internal.MutationExecutorSingleNonBatched.performNonBatchedOperations(MutationExecutorSingleNonBatched.java:53) ~[hibernate-core-7.2.19.Final.jar:7.2.19.Final]
-	at org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.execute(AbstractMutationExecutor.java:66) ~[hibernate-core-7.2.19.Final.jar:7.2.19.Final]
-	at org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.execute(AbstractMutationExecutor.java:55) ~[hibernate-core-7.2.19.Final.jar:7.2.19.Final]
-	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.doStaticInserts(InsertCoordinatorStandard.java:180) ~[hibernate-core-7.2.19.Final.jar:7.2.19.Final]
-	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.coordinateInsert(InsertCoordinatorStandard.java:120) ~[hibernate-core-7.2.19.Final.jar:7.2.19.Final]
-	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.insert(InsertCoordinatorStandard.java:93) ~[hibernate-core-7.2.19.Final.jar:7.2.19.Final]
-	at org.hibernate.action.internal.EntityInsertAction.execute(EntityInsertAction.java:108) ~[hibernate-core-7.2.19.Final.jar:7.2.19.Final]
-	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:634) ~[hibernate-core-7.2.19.Final.jar:7.2.19.Final]
-	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:505) ~[hibernate-core-7.2.19.Final.jar:7.2.19.Final]
-	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:381) ~[hibernate-core-7.2.19.Final.jar:7.2.19.Final]
-	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:40) ~[hibernate-core-7.2.19.Final.jar:7.2.19.Final]
-	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:138) ~[hibernate-core-7.2.19.Final.jar:7.2.19.Final]
-	at org.hibernate.internal.SessionImpl.fireFlush(SessionImpl.java:1484) ~[hibernate-core-7.2.19.Final.jar:7.2.19.Final]
-	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:481) ~[hibernate-core-7.2.19.Final.jar:7.2.19.Final]
-	at org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:2111) ~[hibernate-core-7.2.19.Final.jar:7.2.19.Final]
-	at org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:2033) ~[hibernate-core-7.2.19.Final.jar:7.2.19.Final]
-	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:410) ~[hibernate-core-7.2.19.Final.jar:7.2.19.Final]
-	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:166) ~[hibernate-core-7.2.19.Final.jar:7.2.19.Final]
-	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commitNoRollbackOnly(JdbcResourceLocalTransactionCoordinatorImpl.java:248) ~[hibernate-core-7.2.19.Final.jar:7.2.19.Final]
-	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:242) ~[hibernate-core-7.2.19.Final.jar:7.2.19.Final]
-	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:89) ~[hibernate-core-7.2.19.Final.jar:7.2.19.Final]
-	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:552) ~[spring-orm-7.0.8.jar:7.0.8]
-	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:794) ~[spring-tx-7.0.8.jar:7.0.8]
-	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:757) ~[spring-tx-7.0.8.jar:7.0.8]
-	at org.springframework.transaction.interceptor.TransactionAspectSupport.commitTransactionAfterReturning(TransactionAspectSupport.java:687) ~[spring-tx-7.0.8.jar:7.0.8]
-	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:408) ~[spring-tx-7.0.8.jar:7.0.8]
-	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:130) ~[spring-tx-7.0.8.jar:7.0.8]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-7.0.8.jar:7.0.8]
-	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:135) ~[spring-tx-7.0.8.jar:7.0.8]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-7.0.8.jar:7.0.8]
-	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:166) ~[spring-data-jpa-4.0.6.jar:4.0.6]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-7.0.8.jar:7.0.8]
-	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:222) ~[spring-aop-7.0.8.jar:7.0.8]
-	at jdk.proxy2/jdk.proxy2.$Proxy137.save(Unknown Source) ~[na:na]
-	at com.danish.meterservice.service.MeterManagement.addMeter(MeterManagement.java:33) ~[classes/:na]
-	at com.danish.meterservice.controller.MeterController.addMeter(MeterController.java:25) ~[classes/:na]
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:252) ~[spring-web-7.0.8.jar:7.0.8]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:184) ~[spring-web-7.0.8.jar:7.0.8]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-7.0.8.jar:7.0.8]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934) ~[spring-webmvc-7.0.8.jar:7.0.8]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853) ~[spring-webmvc-7.0.8.jar:7.0.8]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86) ~[spring-webmvc-7.0.8.jar:7.0.8]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.8.jar:7.0.8]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.8.jar:7.0.8]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000) ~[spring-webmvc-7.0.8.jar:7.0.8]
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:903) ~[spring-webmvc-7.0.8.jar:7.0.8]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:649) ~[tomcat-embed-core-11.0.22.jar:6.1]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.8.jar:7.0.8]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.22.jar:6.1]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.22.jar:11.0.22]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.8.jar:7.0.8]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.8.jar:7.0.8]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.8.jar:7.0.8]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.8.jar:7.0.8]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.8.jar:7.0.8]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.8.jar:7.0.8]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:1272) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1801) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
-	at java.base/java.lang.Thread.run(Thread.java:1474) ~[na:na]
-
-2026-08-09T00:18:46.716+05:30  INFO 13372 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler started
-2026-08-09T00:18:46.741+05:30  INFO 13372 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler completed
-2026-08-09T00:20:46.716+05:30  INFO 13372 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler started
-2026-08-09T00:20:46.742+05:30  INFO 13372 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler completed
-2026-08-09T00:22:46.716+05:30  INFO 13372 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler started
-2026-08-09T00:22:46.733+05:30  INFO 13372 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler completed
-2026-08-09T00:23:13.438+05:30  INFO 13372 --- [meterservice] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
-2026-08-09T00:23:13.451+05:30  INFO 13372 --- [meterservice] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
-2026-08-09T00:23:13.460+05:30  INFO 13372 --- [meterservice] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-08-09T00:23:13.468+05:30  INFO 13372 --- [meterservice] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2026-08-09T00:23:13.490+05:30  INFO 13372 --- [meterservice] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2026-08-09T00:23:25.804+05:30  INFO 14224 --- [meterservice] [main] c.d.m.MeterserviceApplication            : Starting MeterserviceApplication using Java 25.0.1 with PID 14224 (C:\Users\Danish\Downloads\meterservice\target\classes started by Danish in C:\Users\Danish\Downloads\meterservice)
-2026-08-09T00:23:25.815+05:30  INFO 14224 --- [meterservice] [main] c.d.m.MeterserviceApplication            : No active profile set, falling back to 1 default profile: "default"
-2026-08-09T00:23:28.105+05:30  INFO 14224 --- [meterservice] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-08-09T00:23:28.300+05:30  INFO 14224 --- [meterservice] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 163 ms. Found 2 JPA repository interfaces.
-2026-08-09T00:23:29.488+05:30  INFO 14224 --- [meterservice] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
-2026-08-09T00:23:29.521+05:30  INFO 14224 --- [meterservice] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-08-09T00:23:29.521+05:30  INFO 14224 --- [meterservice] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
-2026-08-09T00:23:29.655+05:30  INFO 14224 --- [meterservice] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 3634 ms
-2026-08-09T00:23:30.101+05:30  INFO 14224 --- [meterservice] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
-2026-08-09T00:23:30.221+05:30  INFO 14224 --- [meterservice] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.19.Final
-2026-08-09T00:23:31.371+05:30  INFO 14224 --- [meterservice] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-08-09T00:23:31.441+05:30  INFO 14224 --- [meterservice] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-08-09T00:23:31.804+05:30  INFO 14224 --- [meterservice] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7f2c995b
-2026-08-09T00:23:31.808+05:30  INFO 14224 --- [meterservice] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-08-09T00:23:31.978+05:30  INFO 14224 --- [meterservice] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2026-08-12T00:04:18.566+05:30  INFO 9596 --- [meterservice] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-08-12T00:04:18.764+05:30  INFO 9596 --- [meterservice] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-08-12T00:04:18.986+05:30  INFO 9596 --- [meterservice] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-08-12T00:04:19.472+05:30  WARN 9596 --- [meterservice] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-08-12T00:04:20.193+05:30  INFO 9596 --- [meterservice] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-08-12T00:04:20.209+05:30  INFO 9596 --- [meterservice] [main] c.d.m.MeterserviceApplication            : Started MeterserviceApplication in 11.146 seconds (process running for 12.589)
+2026-08-12T00:04:20.218+05:30  INFO 9596 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler started
+2026-08-12T00:04:21.223+05:30  INFO 9596 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler completed
+2026-08-12T00:06:20.205+05:30  INFO 9596 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler started
+2026-08-12T00:06:20.223+05:30  INFO 9596 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler completed
+2026-08-12T00:08:20.218+05:30  INFO 9596 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler started
+2026-08-12T00:08:20.266+05:30  INFO 9596 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler completed
+2026-08-12T00:10:20.204+05:30  INFO 9596 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler started
+2026-08-12T00:10:20.229+05:30  INFO 9596 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler completed
+2026-08-12T00:10:28.782+05:30  INFO 9596 --- [meterservice] [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-08-12T00:10:28.783+05:30  INFO 9596 --- [meterservice] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-08-12T00:10:28.790+05:30  INFO 9596 --- [meterservice] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2026-08-12T00:10:29.297+05:30  INFO 9596 --- [meterservice] [http-nio-8080-exec-3] c.d.m.service.MeterManagement            : New meter added successfully :Meter(meterNumber=20215, msisdn=8271876061, customerName=Danish, address=Kolkata, meterType=FREE, createdOn=null, updatedOn=null, meterStatus=INACTIVE, readings=[])
+2026-08-12T00:10:55.882+05:30  INFO 9596 --- [meterservice] [http-nio-8080-exec-2] c.d.m.service.MeterManagement            : Meter 20215 status updated successfully to :ACTIVE
+2026-08-12T00:12:20.204+05:30  INFO 9596 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler started
+2026-08-12T00:12:20.251+05:30  INFO 9596 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler completed
+2026-08-12T00:14:20.204+05:30  INFO 9596 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler started
+2026-08-12T00:14:20.246+05:30  INFO 9596 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler completed
+2026-08-12T00:16:20.204+05:30  INFO 9596 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler started
+2026-08-12T00:16:20.254+05:30  INFO 9596 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler completed
+2026-08-12T00:18:20.205+05:30  INFO 9596 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler started
+2026-08-12T00:18:20.245+05:30  INFO 9596 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler completed
+2026-08-12T00:20:20.204+05:30  INFO 9596 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler started
+2026-08-12T00:20:20.253+05:30  INFO 9596 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler completed
+2026-08-12T00:22:20.204+05:30  INFO 9596 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler started
+2026-08-12T00:22:20.245+05:30  INFO 9596 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler completed
+2026-08-12T00:24:20.205+05:30  INFO 9596 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler started
+2026-08-12T00:24:20.242+05:30  INFO 9596 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler completed
+2026-08-12T00:26:20.205+05:30  INFO 9596 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler started
+2026-08-12T00:26:20.245+05:30  INFO 9596 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler completed
+2026-08-12T00:28:20.204+05:30  INFO 9596 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler started
+2026-08-12T00:28:20.239+05:30  INFO 9596 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler completed
+2026-08-12T00:30:20.204+05:30  INFO 9596 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler started
+2026-08-12T00:30:20.250+05:30  INFO 9596 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler completed
+2026-08-12T00:32:22.305+05:30  INFO 9596 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler started
+2026-08-12T00:32:22.398+05:30  INFO 9596 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler completed
+2026-08-12T00:39:55.872+05:30  WARN 9596 --- [meterservice] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=7m52s456ms64µs300ns).
+2026-08-12T00:40:53.419+05:30  WARN 9596 --- [meterservice] [http-nio-8080-exec-7] c.d.m.service.MeterReadingService        : Insufficient readings for meter Number: 61415
+2026-08-12T00:41:48.793+05:30  INFO 9596 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler started
+2026-08-12T00:41:48.850+05:30  INFO 9596 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler completed
+2026-08-12T00:41:48.851+05:30  INFO 9596 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler started
+2026-08-12T00:41:48.884+05:30  INFO 9596 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler completed
+2026-08-12T00:41:48.885+05:30  INFO 9596 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler started
+2026-08-12T00:41:48.914+05:30  INFO 9596 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler completed
+2026-08-12T00:41:48.914+05:30  INFO 9596 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler started
+2026-08-12T00:41:48.943+05:30  INFO 9596 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler completed
+2026-08-12T00:42:07.500+05:30  INFO 9596 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler started
+2026-08-12T00:42:07.536+05:30  INFO 9596 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler completed
+2026-08-12T00:44:07.499+05:30  INFO 9596 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler started
+2026-08-12T00:44:07.540+05:30  INFO 9596 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler completed
+2026-08-12T00:46:07.499+05:30  INFO 9596 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler started
+2026-08-12T00:46:07.537+05:30  INFO 9596 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler completed
+2026-08-12T00:48:07.500+05:30  INFO 9596 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler started
+2026-08-12T00:48:07.539+05:30  INFO 9596 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler completed
+2026-08-12T00:50:07.499+05:30  INFO 9596 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler started
+2026-08-12T00:50:07.534+05:30  INFO 9596 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler completed
+2026-08-12T00:52:07.502+05:30  INFO 9596 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler started
+2026-08-12T00:52:07.539+05:30  INFO 9596 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler completed
+2026-08-12T00:54:07.499+05:30  INFO 9596 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler started
+2026-08-12T00:54:07.554+05:30  INFO 9596 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler completed
+2026-08-12T00:56:07.499+05:30  INFO 9596 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler started
+2026-08-12T00:56:07.536+05:30  INFO 9596 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler completed
+2026-08-12T00:58:07.499+05:30  INFO 9596 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler started
+2026-08-12T00:58:07.538+05:30  INFO 9596 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler completed
+2026-08-12T01:00:19.923+05:30  INFO 9596 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler started
+2026-08-12T01:00:19.987+05:30  INFO 9596 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler completed
+2026-08-12T01:02:19.922+05:30  INFO 9596 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler started
+2026-08-12T01:02:19.970+05:30  INFO 9596 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler completed
+2026-08-12T01:04:19.923+05:30  INFO 9596 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler started
+2026-08-12T01:04:19.980+05:30  INFO 9596 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler completed
+2026-08-12T01:06:19.923+05:30  INFO 9596 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler started
+2026-08-12T01:06:19.974+05:30  INFO 9596 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler completed
+2026-08-12T01:08:19.922+05:30  INFO 9596 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler started
+2026-08-12T01:08:19.963+05:30  INFO 9596 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler completed
+2026-08-12T01:10:19.922+05:30  INFO 9596 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler started
+2026-08-12T01:10:19.958+05:30  INFO 9596 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler completed
+2026-08-12T01:12:19.923+05:30  INFO 9596 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler started
+2026-08-12T01:12:19.957+05:30  INFO 9596 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler completed
+2026-08-12T01:14:19.923+05:30  INFO 9596 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler started
+2026-08-12T01:14:19.958+05:30  INFO 9596 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler completed
+2026-08-12T01:16:19.922+05:30  INFO 9596 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler started
+2026-08-12T01:16:19.948+05:30  INFO 9596 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler completed
+2026-08-12T01:17:49.695+05:30  INFO 9596 --- [meterservice] [http-nio-8080-exec-9] c.d.m.service.MeterManagement            : New meter added successfully :Meter(meterNumber=64846, msisdn=8271876061, customerName=Ahnaf, address=Kolkata, meterType=RESIDENTIAL, createdOn=null, updatedOn=null, meterStatus=INACTIVE, readings=[])
+2026-08-12T01:18:19.923+05:30  INFO 9596 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler started
+2026-08-12T01:18:19.954+05:30  INFO 9596 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler completed
+2026-08-12T01:18:27.979+05:30  INFO 9596 --- [meterservice] [http-nio-8080-exec-1] c.d.m.service.MeterManagement            : Meter 64846 status updated successfully to :ACTIVE
+2026-08-12T01:20:19.924+05:30  INFO 9596 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler started
+2026-08-12T01:20:19.967+05:30  INFO 9596 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler completed
+2026-08-12T01:21:24.416+05:30  WARN 9596 --- [meterservice] [http-nio-8080-exec-6] c.d.m.service.MeterReadingService        : Insufficient readings for meter Number: 64846
+2026-08-12T01:22:19.922+05:30  INFO 9596 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler started
+2026-08-12T01:22:19.971+05:30  INFO 9596 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler completed
+2026-08-12T01:22:23.449+05:30  INFO 9596 --- [meterservice] [http-nio-8080-exec-3] c.d.m.service.MeterManagement            : Meter 64846 status updated successfully to :INACTIVE
+2026-08-12T01:23:23.468+05:30  INFO 9596 --- [meterservice] [http-nio-8080-exec-6] c.d.m.service.MeterManagement            : Meter 64846 status updated successfully to :INACTIVE
+2026-08-12T01:24:19.922+05:30  INFO 9596 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler started
+2026-08-12T01:24:19.956+05:30  INFO 9596 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler completed
+2026-08-12T01:24:23.508+05:30  INFO 9596 --- [meterservice] [http-nio-8080-exec-3] c.d.m.service.MeterManagement            : Meter 64846 status updated successfully to :INACTIVE
+2026-08-12T01:26:03.613+05:30  INFO 9596 --- [meterservice] [http-nio-8080-exec-6] c.d.m.service.MeterManagement            : Meter 64846 status updated successfully to :INACTIVE
+2026-08-12T01:26:19.923+05:30  INFO 9596 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler started
+2026-08-12T01:26:19.965+05:30  INFO 9596 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler completed
+2026-08-12T01:27:02.574+05:30  INFO 9596 --- [meterservice] [http-nio-8080-exec-3] c.d.m.service.MeterManagement            : Meter 64846 status updated successfully to :INACTIVE
+2026-08-12T01:28:19.923+05:30  INFO 9596 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler started
+2026-08-12T01:28:19.976+05:30  INFO 9596 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler completed
+2026-08-12T01:28:43.424+05:30  INFO 9596 --- [meterservice] [http-nio-8080-exec-6] c.d.m.service.MeterManagement            : Meter 64846 status updated successfully to :INACTIVE
+2026-08-12T01:29:42.685+05:30  INFO 9596 --- [meterservice] [http-nio-8080-exec-3] c.d.m.service.MeterManagement            : Meter 64846 status updated successfully to :INACTIVE
+2026-08-12T01:30:19.922+05:30  INFO 9596 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler started
+2026-08-12T01:30:19.995+05:30  INFO 9596 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler completed
+2026-08-12T01:30:42.782+05:30  INFO 9596 --- [meterservice] [http-nio-8080-exec-6] c.d.m.service.MeterManagement            : Meter 64846 status updated successfully to :INACTIVE
+2026-08-12T01:31:42.551+05:30  INFO 9596 --- [meterservice] [http-nio-8080-exec-3] c.d.m.service.MeterManagement            : Meter 64846 status updated successfully to :INACTIVE
+2026-08-12T01:32:19.923+05:30  INFO 9596 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler started
+2026-08-12T01:32:19.928+05:30  WARN 9596 --- [meterservice] [scheduling-1] c.d.m.service.MeterReadingService        : Active Meter List is empty. Skipping reading generation!!
+2026-08-12T01:32:19.929+05:30  INFO 9596 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler completed
+2026-08-12T01:34:19.922+05:30  INFO 9596 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler started
+2026-08-12T01:34:19.926+05:30  WARN 9596 --- [meterservice] [scheduling-1] c.d.m.service.MeterReadingService        : Active Meter List is empty. Skipping reading generation!!
+2026-08-12T01:34:19.926+05:30  INFO 9596 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler completed
+2026-08-12T01:36:19.922+05:30  INFO 9596 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler started
+2026-08-12T01:36:19.926+05:30  WARN 9596 --- [meterservice] [scheduling-1] c.d.m.service.MeterReadingService        : Active Meter List is empty. Skipping reading generation!!
+2026-08-12T01:36:19.926+05:30  INFO 9596 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler completed
+2026-08-12T01:37:03.508+05:30  INFO 9596 --- [meterservice] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-08-12T01:37:03.543+05:30  INFO 9596 --- [meterservice] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-08-12T01:37:03.572+05:30  INFO 9596 --- [meterservice] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-08-12T01:37:03.604+05:30  INFO 9596 --- [meterservice] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-08-12T01:37:03.630+05:30  INFO 9596 --- [meterservice] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-08-12T21:41:29.477+05:30  INFO 17356 --- [meterservice] [main] c.d.m.MeterserviceApplication            : Starting MeterserviceApplication using Java 25.0.1 with PID 17356 (C:\Users\Danish\Downloads\meterservice\target\classes started by Danish in C:\Users\Danish\Downloads\meterservice)
+2026-08-12T21:41:29.491+05:30  INFO 17356 --- [meterservice] [main] c.d.m.MeterserviceApplication            : No active profile set, falling back to 1 default profile: "default"
+2026-08-12T21:41:32.295+05:30  INFO 17356 --- [meterservice] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-08-12T21:41:32.522+05:30  INFO 17356 --- [meterservice] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 194 ms. Found 2 JPA repository interfaces.
+2026-08-12T21:41:34.616+05:30  INFO 17356 --- [meterservice] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-08-12T21:41:34.667+05:30  INFO 17356 --- [meterservice] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-08-12T21:41:34.668+05:30  INFO 17356 --- [meterservice] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-08-12T21:41:34.905+05:30  INFO 17356 --- [meterservice] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 5224 ms
+2026-08-12T21:41:35.784+05:30  INFO 17356 --- [meterservice] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-08-12T21:41:36.121+05:30  INFO 17356 --- [meterservice] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.19.Final
+2026-08-12T21:41:38.526+05:30  INFO 17356 --- [meterservice] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-08-12T21:41:38.669+05:30  INFO 17356 --- [meterservice] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-08-12T21:41:39.707+05:30  INFO 17356 --- [meterservice] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6ec3d8e4
+2026-08-12T21:41:39.721+05:30  INFO 17356 --- [meterservice] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-08-12T21:41:40.175+05:30  INFO 17356 --- [meterservice] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [jdbc:postgresql://localhost:5432/meterservice]
 	Database driver: PostgreSQL JDBC Driver
 	Database dialect: PostgreSQLDialect
@@ -181,117 +186,86 @@ org.postgresql.util.PSQLException: ERROR: null value in column "created_on" of r
 	Pool: DataSourceConnectionProvider
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2026-08-09T00:23:34.519+05:30  INFO 14224 --- [meterservice] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-08-09T00:23:34.701+05:30  INFO 14224 --- [meterservice] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-08-09T00:23:34.967+05:30  INFO 14224 --- [meterservice] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
-2026-08-09T00:23:35.496+05:30  WARN 14224 --- [meterservice] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-08-09T00:23:36.282+05:30  INFO 14224 --- [meterservice] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
-2026-08-09T00:23:36.308+05:30  INFO 14224 --- [meterservice] [main] c.d.m.MeterserviceApplication            : Started MeterserviceApplication in 11.945 seconds (process running for 13.509)
-2026-08-09T00:23:36.328+05:30  INFO 14224 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler started
-2026-08-09T00:23:37.804+05:30  INFO 14224 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler completed
-2026-08-09T00:23:48.215+05:30  INFO 14224 --- [meterservice] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-08-09T00:23:48.216+05:30  INFO 14224 --- [meterservice] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2026-08-09T00:23:48.224+05:30  INFO 14224 --- [meterservice] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
-2026-08-09T00:23:48.840+05:30  INFO 14224 --- [meterservice] [http-nio-8080-exec-2] c.d.m.service.MeterManagement            : New meter added successfully :Meter(meterNumber=46111, msisdn=8271876061, customerName=Arman, address=Kolkata, meterType=FREE, createdOn=null, updatedOn=null, meterStatus=INACTIVE, readings=[])
-2026-08-09T00:25:36.299+05:30  INFO 14224 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler started
-2026-08-09T00:25:36.325+05:30  INFO 14224 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler completed
-2026-08-09T00:27:36.300+05:30  INFO 14224 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler started
-2026-08-09T00:27:36.319+05:30  INFO 14224 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler completed
-2026-08-09T00:29:36.356+05:30  INFO 14224 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler started
-2026-08-09T00:29:36.410+05:30  INFO 14224 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler completed
-2026-08-09T00:31:36.299+05:30  INFO 14224 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler started
-2026-08-09T00:31:36.369+05:30  INFO 14224 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler completed
-2026-08-09T00:33:36.299+05:30  INFO 14224 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler started
-2026-08-09T00:33:36.336+05:30  INFO 14224 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler completed
-2026-08-09T00:35:36.304+05:30  INFO 14224 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler started
-2026-08-09T00:35:36.363+05:30  INFO 14224 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler completed
-2026-08-09T00:37:36.299+05:30  INFO 14224 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler started
-2026-08-09T00:37:36.328+05:30  INFO 14224 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler completed
-2026-08-09T00:39:36.299+05:30  INFO 14224 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler started
-2026-08-09T00:39:36.343+05:30  INFO 14224 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler completed
-2026-08-09T00:41:36.300+05:30  INFO 14224 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler started
-2026-08-09T00:41:36.333+05:30  INFO 14224 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler completed
-2026-08-09T00:43:36.299+05:30  INFO 14224 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler started
-2026-08-09T00:43:36.331+05:30  INFO 14224 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler completed
-2026-08-09T00:45:36.300+05:30  INFO 14224 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler started
-2026-08-09T00:45:36.326+05:30  INFO 14224 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler completed
-2026-08-09T00:47:36.299+05:30  INFO 14224 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler started
-2026-08-09T00:47:36.319+05:30  INFO 14224 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler completed
-2026-08-09T00:49:36.300+05:30  INFO 14224 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler started
-2026-08-09T00:49:36.323+05:30  INFO 14224 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler completed
-2026-08-09T00:51:05.632+05:30  INFO 14224 --- [meterservice] [http-nio-8080-exec-6] c.d.m.service.MeterManagement            : New meter added successfully :Meter(meterNumber=58108, msisdn=8271876061, customerName=Rakesh, address=Kolkata, meterType=FREE, createdOn=null, updatedOn=null, meterStatus=INACTIVE, readings=[])
-2026-08-09T00:51:36.299+05:30  INFO 14224 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler started
-2026-08-09T00:51:36.316+05:30  INFO 14224 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler completed
-2026-08-09T00:52:24.131+05:30  INFO 14224 --- [meterservice] [http-nio-8080-exec-10] c.d.m.service.MeterManagement            : New meter added successfully :Meter(meterNumber=98482, msisdn=8271876061, customerName=Rakesh, address=Kolkata, meterType=FREE, createdOn=null, updatedOn=null, meterStatus=INACTIVE, readings=[])
-2026-08-09T00:53:36.299+05:30  INFO 14224 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler started
-2026-08-09T00:53:36.345+05:30  INFO 14224 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler completed
-2026-08-09T00:55:36.300+05:30  INFO 14224 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler started
-2026-08-09T00:55:36.318+05:30  INFO 14224 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler completed
-2026-08-09T00:57:36.299+05:30  INFO 14224 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler started
-2026-08-09T00:57:36.318+05:30  INFO 14224 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler completed
-2026-08-09T00:59:36.299+05:30  INFO 14224 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler started
-2026-08-09T00:59:36.335+05:30  INFO 14224 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler completed
-2026-08-09T01:01:36.299+05:30  INFO 14224 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler started
-2026-08-09T01:01:36.331+05:30  INFO 14224 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler completed
-2026-08-09T01:03:36.299+05:30  INFO 14224 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler started
-2026-08-09T01:03:36.321+05:30  INFO 14224 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler completed
-2026-08-09T01:05:36.299+05:30  INFO 14224 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler started
-2026-08-09T01:05:36.333+05:30  INFO 14224 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler completed
-2026-08-09T01:07:36.299+05:30  INFO 14224 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler started
-2026-08-09T01:07:36.336+05:30  INFO 14224 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler completed
-2026-08-09T01:09:36.299+05:30  INFO 14224 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler started
-2026-08-09T01:09:36.348+05:30  INFO 14224 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler completed
-2026-08-09T01:11:36.303+05:30  INFO 14224 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler started
-2026-08-09T01:11:36.327+05:30  INFO 14224 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler completed
-2026-08-09T01:13:36.299+05:30  INFO 14224 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler started
-2026-08-09T01:13:36.318+05:30  INFO 14224 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler completed
-2026-08-09T01:15:36.299+05:30  INFO 14224 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler started
-2026-08-09T01:15:36.321+05:30  INFO 14224 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler completed
-2026-08-09T01:17:36.300+05:30  INFO 14224 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler started
-2026-08-09T01:17:36.345+05:30  INFO 14224 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler completed
-2026-08-09T01:19:36.299+05:30  INFO 14224 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler started
-2026-08-09T01:19:36.341+05:30  INFO 14224 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler completed
-2026-08-09T01:20:46.819+05:30  INFO 14224 --- [meterservice] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
-2026-08-09T01:20:47.116+05:30  INFO 14224 --- [meterservice] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
-2026-08-09T01:20:47.196+05:30  INFO 14224 --- [meterservice] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-08-09T01:20:47.327+05:30  INFO 14224 --- [meterservice] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2026-08-09T01:20:47.351+05:30  INFO 14224 --- [meterservice] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2026-08-09T05:33:07.819+05:30  INFO 17148 --- [meterservice] [main] c.d.m.MeterserviceApplication            : Starting MeterserviceApplication using Java 25.0.1 with PID 17148 (C:\Users\Danish\Downloads\meterservice\target\classes started by Danish in C:\Users\Danish\Downloads\meterservice)
-2026-08-09T05:33:07.839+05:30  INFO 17148 --- [meterservice] [main] c.d.m.MeterserviceApplication            : No active profile set, falling back to 1 default profile: "default"
-2026-08-09T05:33:11.484+05:30  INFO 17148 --- [meterservice] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-08-09T05:33:11.742+05:30  INFO 17148 --- [meterservice] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 211 ms. Found 2 JPA repository interfaces.
-2026-08-09T05:33:13.503+05:30  INFO 17148 --- [meterservice] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
-2026-08-09T05:33:13.690+05:30  INFO 17148 --- [meterservice] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-08-09T05:33:13.691+05:30  INFO 17148 --- [meterservice] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
-2026-08-09T05:33:14.085+05:30  INFO 17148 --- [meterservice] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 5832 ms
-2026-08-09T05:33:15.123+05:30  INFO 17148 --- [meterservice] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
-2026-08-09T05:33:15.459+05:30  INFO 17148 --- [meterservice] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.19.Final
-2026-08-09T05:33:16.977+05:30  INFO 17148 --- [meterservice] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-08-09T05:33:17.066+05:30  INFO 17148 --- [meterservice] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-08-09T05:33:17.603+05:30  INFO 17148 --- [meterservice] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@27db45f
-2026-08-09T05:33:17.607+05:30  INFO 17148 --- [meterservice] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-08-09T05:33:17.924+05:30  INFO 17148 --- [meterservice] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [jdbc:postgresql://localhost:5432/meterservice]
-	Database driver: PostgreSQL JDBC Driver
-	Database dialect: PostgreSQLDialect
-	Database version: 16.11
-	Default catalog/schema: meterservice/public
-	Autocommit mode: undefined/unknown
-	Isolation level: READ_COMMITTED [default READ_COMMITTED]
-	JDBC fetch size: none
-	Pool: DataSourceConnectionProvider
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2026-08-09T05:33:21.208+05:30  INFO 17148 --- [meterservice] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-08-09T05:33:21.440+05:30  INFO 17148 --- [meterservice] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-08-09T05:33:21.720+05:30  INFO 17148 --- [meterservice] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
-2026-08-09T05:33:22.632+05:30  WARN 17148 --- [meterservice] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-08-09T05:33:23.878+05:30  INFO 17148 --- [meterservice] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
-2026-08-09T05:33:23.907+05:30  INFO 17148 --- [meterservice] [main] c.d.m.MeterserviceApplication            : Started MeterserviceApplication in 19.577 seconds (process running for 24.493)
-2026-08-09T05:33:23.937+05:30  INFO 17148 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler started
-2026-08-09T05:33:25.901+05:30  INFO 17148 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler completed
-2026-08-09T05:34:26.629+05:30  INFO 17148 --- [meterservice] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
-2026-08-09T05:34:26.646+05:30  INFO 17148 --- [meterservice] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
-2026-08-09T05:34:26.660+05:30  INFO 17148 --- [meterservice] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-08-09T05:34:26.669+05:30  INFO 17148 --- [meterservice] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2026-08-09T05:34:26.721+05:30  INFO 17148 --- [meterservice] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-08-12T21:41:43.737+05:30  INFO 17356 --- [meterservice] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-08-12T21:41:44.783+05:30  INFO 17356 --- [meterservice] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-08-12T21:41:45.047+05:30  INFO 17356 --- [meterservice] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-08-12T21:41:45.633+05:30  WARN 17356 --- [meterservice] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-08-12T21:41:46.617+05:30  INFO 17356 --- [meterservice] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-08-12T21:41:46.653+05:30  INFO 17356 --- [meterservice] [main] c.d.m.MeterserviceApplication            : Started MeterserviceApplication in 18.824 seconds (process running for 21.887)
+2026-08-12T21:41:46.675+05:30  INFO 17356 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler started
+2026-08-12T21:41:49.633+05:30  WARN 17356 --- [meterservice] [scheduling-1] c.d.m.service.MeterReadingService        : Active Meter List is empty. Skipping reading generation!!
+2026-08-12T21:41:49.633+05:30  INFO 17356 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler completed
+2026-08-12T21:42:03.771+05:30  INFO 17356 --- [meterservice] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-08-12T21:42:03.772+05:30  INFO 17356 --- [meterservice] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-08-12T21:42:03.779+05:30  INFO 17356 --- [meterservice] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2026-08-12T21:43:46.644+05:30  INFO 17356 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler started
+2026-08-12T21:43:46.650+05:30  WARN 17356 --- [meterservice] [scheduling-1] c.d.m.service.MeterReadingService        : Active Meter List is empty. Skipping reading generation!!
+2026-08-12T21:43:46.651+05:30  INFO 17356 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler completed
+2026-08-12T21:45:46.644+05:30  INFO 17356 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler started
+2026-08-12T21:45:46.648+05:30  WARN 17356 --- [meterservice] [scheduling-1] c.d.m.service.MeterReadingService        : Active Meter List is empty. Skipping reading generation!!
+2026-08-12T21:45:46.649+05:30  INFO 17356 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler completed
+2026-08-12T21:47:46.643+05:30  INFO 17356 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler started
+2026-08-12T21:47:46.647+05:30  WARN 17356 --- [meterservice] [scheduling-1] c.d.m.service.MeterReadingService        : Active Meter List is empty. Skipping reading generation!!
+2026-08-12T21:47:46.648+05:30  INFO 17356 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler completed
+2026-08-12T21:49:46.643+05:30  INFO 17356 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler started
+2026-08-12T21:49:46.648+05:30  WARN 17356 --- [meterservice] [scheduling-1] c.d.m.service.MeterReadingService        : Active Meter List is empty. Skipping reading generation!!
+2026-08-12T21:49:46.653+05:30  INFO 17356 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler completed
+2026-08-12T21:51:46.644+05:30  INFO 17356 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler started
+2026-08-12T21:51:46.648+05:30  WARN 17356 --- [meterservice] [scheduling-1] c.d.m.service.MeterReadingService        : Active Meter List is empty. Skipping reading generation!!
+2026-08-12T21:51:46.648+05:30  INFO 17356 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler completed
+2026-08-12T21:53:46.644+05:30  INFO 17356 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler started
+2026-08-12T21:53:46.650+05:30  WARN 17356 --- [meterservice] [scheduling-1] c.d.m.service.MeterReadingService        : Active Meter List is empty. Skipping reading generation!!
+2026-08-12T21:53:46.651+05:30  INFO 17356 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler completed
+2026-08-12T21:55:46.643+05:30  INFO 17356 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler started
+2026-08-12T21:55:46.652+05:30  WARN 17356 --- [meterservice] [scheduling-1] c.d.m.service.MeterReadingService        : Active Meter List is empty. Skipping reading generation!!
+2026-08-12T21:55:46.653+05:30  INFO 17356 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler completed
+2026-08-12T21:57:46.644+05:30  INFO 17356 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler started
+2026-08-12T21:57:46.649+05:30  WARN 17356 --- [meterservice] [scheduling-1] c.d.m.service.MeterReadingService        : Active Meter List is empty. Skipping reading generation!!
+2026-08-12T21:57:46.649+05:30  INFO 17356 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler completed
+2026-08-12T21:59:46.644+05:30  INFO 17356 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler started
+2026-08-12T21:59:46.648+05:30  WARN 17356 --- [meterservice] [scheduling-1] c.d.m.service.MeterReadingService        : Active Meter List is empty. Skipping reading generation!!
+2026-08-12T21:59:46.649+05:30  INFO 17356 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler completed
+2026-08-12T22:01:46.643+05:30  INFO 17356 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler started
+2026-08-12T22:01:46.647+05:30  WARN 17356 --- [meterservice] [scheduling-1] c.d.m.service.MeterReadingService        : Active Meter List is empty. Skipping reading generation!!
+2026-08-12T22:01:46.647+05:30  INFO 17356 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler completed
+2026-08-12T22:03:46.644+05:30  INFO 17356 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler started
+2026-08-12T22:03:46.649+05:30  WARN 17356 --- [meterservice] [scheduling-1] c.d.m.service.MeterReadingService        : Active Meter List is empty. Skipping reading generation!!
+2026-08-12T22:03:46.649+05:30  INFO 17356 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler completed
+2026-08-12T22:06:59.708+05:30  WARN 17356 --- [meterservice] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m19s832ms703µs500ns).
+2026-08-12T22:07:36.438+05:30  INFO 17356 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler started
+2026-08-12T22:07:36.457+05:30  WARN 17356 --- [meterservice] [scheduling-1] c.d.m.service.MeterReadingService        : Active Meter List is empty. Skipping reading generation!!
+2026-08-12T22:07:36.459+05:30  INFO 17356 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler completed
+2026-08-12T22:07:46.623+05:30  INFO 17356 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler started
+2026-08-12T22:07:46.627+05:30  WARN 17356 --- [meterservice] [scheduling-1] c.d.m.service.MeterReadingService        : Active Meter List is empty. Skipping reading generation!!
+2026-08-12T22:07:46.627+05:30  INFO 17356 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler completed
+2026-08-12T22:09:46.626+05:30  INFO 17356 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler started
+2026-08-12T22:09:46.634+05:30  WARN 17356 --- [meterservice] [scheduling-1] c.d.m.service.MeterReadingService        : Active Meter List is empty. Skipping reading generation!!
+2026-08-12T22:09:46.634+05:30  INFO 17356 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler completed
+2026-08-12T22:10:56.377+05:30  INFO 17356 --- [meterservice] [http-nio-8080-exec-6] c.d.m.service.MeterManagement            : New meter added successfully :Meter(meterNumber=65555, msisdn=8271876061, customerName=Ahnaf, address=Kolkata, meterType=RESIDENTIAL, createdOn=null, updatedOn=null, meterStatus=INACTIVE, readings=[])
+2026-08-12T22:11:46.626+05:30  INFO 17356 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler started
+2026-08-12T22:11:46.638+05:30  WARN 17356 --- [meterservice] [scheduling-1] c.d.m.service.MeterReadingService        : Active Meter List is empty. Skipping reading generation!!
+2026-08-12T22:11:46.638+05:30  INFO 17356 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler completed
+2026-08-12T22:11:58.738+05:30  INFO 17356 --- [meterservice] [http-nio-8080-exec-10] c.d.m.service.MeterManagement            : Meter 65555 status updated successfully to :ACTIVE
+2026-08-12T22:12:10.005+05:30  WARN 17356 --- [meterservice] [http-nio-8080-exec-1] c.d.m.service.MeterReadingService        : Insufficient readings for meter Number: 65555
+2026-08-12T22:13:09.867+05:30  WARN 17356 --- [meterservice] [http-nio-8080-exec-5] c.d.m.service.MeterReadingService        : Insufficient readings for meter Number: 65555
+2026-08-12T22:13:46.623+05:30  INFO 17356 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler started
+2026-08-12T22:13:46.695+05:30  INFO 17356 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler completed
+2026-08-12T22:14:09.894+05:30  WARN 17356 --- [meterservice] [http-nio-8080-exec-8] c.d.m.service.MeterReadingService        : Insufficient readings for meter Number: 65555
+2026-08-12T22:15:09.856+05:30  WARN 17356 --- [meterservice] [http-nio-8080-exec-2] c.d.m.service.MeterReadingService        : Insufficient readings for meter Number: 65555
+2026-08-12T22:15:46.643+05:30  INFO 17356 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler started
+2026-08-12T22:15:46.706+05:30  INFO 17356 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler completed
+2026-08-12T22:17:46.623+05:30  INFO 17356 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler started
+2026-08-12T22:17:46.639+05:30  INFO 17356 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler completed
+2026-08-12T22:19:46.623+05:30  INFO 17356 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler started
+2026-08-12T22:19:46.639+05:30  INFO 17356 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler completed
+2026-08-12T22:21:46.624+05:30  INFO 17356 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler started
+2026-08-12T22:21:46.644+05:30  INFO 17356 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler completed
+2026-08-12T22:22:09.937+05:30  INFO 17356 --- [meterservice] [http-nio-8080-exec-5] c.d.m.service.MeterManagement            : Meter 65555 status updated successfully to :INACTIVE
+2026-08-12T22:23:46.624+05:30  INFO 17356 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler started
+2026-08-12T22:23:46.631+05:30  WARN 17356 --- [meterservice] [scheduling-1] c.d.m.service.MeterReadingService        : Active Meter List is empty. Skipping reading generation!!
+2026-08-12T22:23:46.631+05:30  INFO 17356 --- [meterservice] [scheduling-1] c.d.m.scheduler.ReadingScheduler         : Meter Reading Scheduler completed
+2026-08-12T22:24:03.266+05:30  INFO 17356 --- [meterservice] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-08-12T22:24:03.368+05:30  INFO 17356 --- [meterservice] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-08-12T22:24:03.426+05:30  INFO 17356 --- [meterservice] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-08-12T22:24:03.477+05:30  INFO 17356 --- [meterservice] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-08-12T22:24:03.779+05:30  INFO 17356 --- [meterservice] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
