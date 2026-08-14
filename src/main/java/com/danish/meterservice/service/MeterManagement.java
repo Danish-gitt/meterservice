@@ -1,9 +1,11 @@
 package com.danish.meterservice.service;
 
+import com.danish.meterservice.Repository.MeterReadingRepository;
 import com.danish.meterservice.dto.MeterRequest;
 import com.danish.meterservice.Repository.MeterRepository;
 import com.danish.meterservice.dto.MeterResponse;
 import com.danish.meterservice.entity.Meter;
+import com.danish.meterservice.entity.MeterReading;
 import com.danish.meterservice.enums.MeterStatus;
 import com.danish.meterservice.exception.MeterAlreadyExistsException;
 import com.danish.meterservice.exception.MeterNotFoundException;
@@ -20,6 +22,9 @@ import java.util.Optional;
 @RequiredArgsConstructor
 public class MeterManagement {
     private final MeterRepository meterRepository;
+    private final MeterReadingService meterReadingService;
+    private final MeterReadingRepository meterReadingRepository;
+
     public Meter addMeter(MeterRequest meterRequest){
         if(meterRepository.existsById(meterRequest.getMeterNumber())){
             log.warn("Meter Number already exists :{}",meterRequest.getMeterNumber());
@@ -35,6 +40,15 @@ public class MeterManagement {
         newMeter.setMeterStatus(meterRequest.getMeterStatus());
         meterRepository.save(newMeter);
         log.info("New meter added successfully :{}",newMeter);
+
+        //Adding a zero meter Reading
+        MeterReading zeroReading = new MeterReading();
+        zeroReading.setMeter(newMeter);
+        zeroReading.setReadingValue(0L);
+        meterReadingRepository.save(zeroReading);
+        log.info("Zero Reading added for meter: {}",newMeter);
+
+
         return newMeter;
     }
 
@@ -83,8 +97,9 @@ public class MeterManagement {
     public List<MeterResponse> getActiveMeters(){
         List<Meter> activeMeters = meterRepository.findByMeterStatus(MeterStatus.ACTIVE);
         List<MeterResponse> responses = new ArrayList<>();
-        MeterResponse singleResponse =  new MeterResponse();
+       // MeterResponse singleResponse =  new MeterResponse();
         for(Meter singleMeter : activeMeters){
+            MeterResponse singleResponse =  new MeterResponse();
             singleResponse.setMeterNumber(singleMeter.getMeterNumber());
             singleResponse.setMsisdn(singleMeter.getMsisdn());
             singleResponse.setCustomerName(singleMeter.getCustomerName());

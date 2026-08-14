@@ -12,7 +12,7 @@ import org.springframework.stereotype.Component;
 public class ReadingScheduler {
     private final MeterReadingService meterReadingService;
 
-    @Scheduled(fixedRate = 120000)
+    @Scheduled(fixedRate = 60000)
     public void generateMeterReading(){
         log.info("Meter Reading Scheduler started");
         meterReadingService.generateReading();
